@@ -1,0 +1,158 @@
+*{
+    font-family: 'Lexend Exa', poppins;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(49, 28, 30), #8E6868);
+}
+
+/* navbar */
+.navbar {
+    background-color: #72383D;
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.nav-text {
+    display: flex;
+    padding-left: 48px;
+    padding-top: 5px;
+}
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.nav-search {
+    display: flex;
+    padding-top: 1px;
+}
+
+.nav-profile {
+    display: flex;
+    padding-right: 2px;
+}
+
+.nav-setting {
+    display: flex;
+    padding-left: 0px;
+}
+
+/* content top */
+.content-top {
+    display: flex;
+}
+
+.content-top-left {
+    width: 80%;
+}
+
+.top-text {
+    margin-left: 60px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.description-text {
+    margin-left: 60px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    font-family: poppins;
+    font-size: 28px;
+    color: #fff;
+}
+
+.button-explore {
+    margin-left: 80px;
+    font-size: 26px;
+}
+
+.content-top-right {
+    width: 40%;
+    margin-top: 80px;
+}
+
+/* footer */
+.footer-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.best-selling {
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-1 {
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.name-best-1, .diskon-best-1, .after-disc-best-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.name-best-2, .diskon-best-2, .after-disc-best-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.best-3 {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.name-best-3, .diskon-best-3, .after-disc-best-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button-more{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* styles.css */
+.rectangle-button {
+    /* Set button dimensions and padding */
+    width: 400px;
+    height: 75px;
+    padding: 10px 20px;
+    margin-top: 30px;
+
+    /* Define button background color and border */
+    background-color: #72383D;
+    border: none;
+    border-radius: 35px;
+
+    /* Define text styles */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+    /* Add hover effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect */
+.rectangle-button:hover {
+    background-color: #8E6868;
+}
+
+

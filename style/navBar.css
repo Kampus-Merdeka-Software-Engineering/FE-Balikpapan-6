@@ -1,0 +1,44 @@
+*{
+    font-family: 'Lexend Exa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #72383D;
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.nav-text {
+    display: flex;
+    padding-left: 48px;
+    padding-top: 5px;
+}
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.nav-search {
+    display: flex;
+    padding-top: 1px;
+}
+
+.nav-profile {
+    display: flex;
+    padding-right: 2px;
+}
+
+.nav-setting {
+    display: flex;
+    padding-left: 0px;
+}
