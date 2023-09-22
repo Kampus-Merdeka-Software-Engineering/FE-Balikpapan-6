@@ -1,0 +1,124 @@
+body {
+    background-color: #AC9C8D;
+    font-family: 'Lexend Exa';
+}
+
+.section1 {
+    margin: 100px;
+}
+
+.deliveryAddBox {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #D9D9D9;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.material-icons, h2 {
+    background-color: #D9D9D9;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+i {
+    font-size: 36px !important;
+}
+
+.section2 {
+    margin: 100px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.item {
+    background-color: #72383D;
+    width: 600px;
+    height: 250px;
+    margin-bottom: 100px;
+    color: white;
+    display: flex;
+}
+
+.itemContent1 {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemContent2 {
+    height: 250px;
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detailCheckout {
+    padding-top: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.colorBox {
+    display: flex;
+    justify-content: left;
+}
+
+#box1 {
+    width: 15px;
+    height: 15px;
+    background-color: #884720;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+#box2 {
+    width: 15px;
+    height: 15px;
+    background-color: #2b14f7;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+#box3 {
+    width: 15px;
+    height: 15px;
+    background-color: #e0078d;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+h3, h4, .colorBox, .inputQty {
+    margin: 5px;
+}
+
+.inputQty input {
+    width: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.price {
+    align-items: right;
+}
