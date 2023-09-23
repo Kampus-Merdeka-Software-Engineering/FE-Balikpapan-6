@@ -122,14 +122,16 @@
   }
   
   button {
-    width: 100%;
+    width: 273px;
+    height: 53px;
+    flex-shrink: 0;
     padding: 10px;
     border: none;
     outline: none;
     background: #C1908B;
-    color: white;
+    color:#FEFEFF;
     margin-top: 20%;
-    border-radius: 30px;
+    border-radius: 14px;
   }
   
   @media only screen and (max-width:768px) {
