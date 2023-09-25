@@ -10,42 +10,50 @@
 <div class="box">
     <div class="card">
         <div class="box2">
-            <div class="secondcard" style="width: 100%; height: 786px; background: rgba(148.75, 81.19, 87.02, 0.60); border-radius: 45px; padding: 0px 0px;"><br><br>                  
-                <h1>Make</h1><br>
-                <h1>Them</h1><br>
-                <h1> Stop</h1> <br>
-                <h1>and</h1><br>
+            <div class="secondcard" style="width: 300px; height: 320px; background: rgba(148.75, 81.19, 87.02, 0.60); border-radius: 45px; padding: 0px 0px;"><br>
+                <h1>Make Them</h1><br>
+                <h1> Stop and</h1><br>
                 <h1>Stare</h1>
-                <div class="eclipse" style="position: right; padding :560px 560px 560px 560px; width: 100px; height: 100px; background: rgba(217, 217, 217, 0); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 9999px; border: 40px #000000 solid"></div>
-
             </div>
         </div>
-        <div class="eclipse2" style="position: left; padding : 6600px 660px 660px 660px; width: 100px; height: 100px; background: rgba(217, 217, 217, 0); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 9999px; border: 40px #904F55 solid"></div>
 
     </div>
    
  <div class="second">
-    <H1>You’re in Login Area</H1>
+    <H1 style="padding-top: 40px;">You’re in Login Area</H1>
     <h1 style="color: black; font-size: 20px;">Hello, fashion hunter! Login to your account to access<br> the biggest online fashion marketplace in Asia</P>    
-    <div class="input-box">
-        <label>E-mail</label>
-        <input type="e-mail" required>
 
+<form id="loginForm" action="#" method="post">
+    <div class="input-box">
+    <label>E-mail</label>
+    <input type="email"  id="email" name="email" required>
     </div>
     <div class="input-box">
-        <label>Password</label>
-        <input type="password" required>
-    </div><br>
-    <h1 style="color: black; font-size: 28px; padding-right: 40px">or<br> <br> <br>login using your social network<br><br>
+    <label>Password</label>
+    <input type="password" id="password" name="password" required>
+    </div>
+    <h1 style="color: black; font-size: 18px; padding-right: 10px; padding-left: 40px;">or<br> login using your social network<br><br>
     <span class="icon"><a href="https://m.twitter.com/login" style="color: #000000;"><ion-icon name="logo-twitter"></ion-icon></a></span>
     <span class="icon"><a href="https://myaccount.google.com" style="color: #000000;"><ion-icon name="logo-google"></ion-icon></a></span>
-    <span class="icon"><a href="https://www.facebook.com" style="color: #000000;"><ion-icon name="logo-facebook"></ion-icon></a></span><br><br><br>
-    <button type="submit"><a href="#" style="color: aliceblue;">SUBMIT</a></button>
-    <h1 style="color: black; font-size: 28px; padding-right: 40px"> Doesn't have account?</h1> 
-    <a href="regist.html" style="color: black; font-size: 24px; font-weight: 400%; padding-left: 280px;">Create Account</a><br><br>
+    <span class="icon"><a href="https://www.facebook.com" style="color: #000000;"><ion-icon name="logo-facebook"></ion-icon></a></span><br><br>
+    <input type="submit" id ="loginpage"></a></input>
+    </form>
+    <h1 style="color: black; font-size: 20px; padding-left: 30px;"> Doesn't have account?</h1> 
+    <a href="regist.html" style="color: black; font-size: 18px; font-weight: 400%; padding-left: 50px;">Create Account</a><br><br>
 
 </div>
 </div>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+event.preventDefault();
+submitForm();
+});
+
+function submitForm() {
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            }
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
