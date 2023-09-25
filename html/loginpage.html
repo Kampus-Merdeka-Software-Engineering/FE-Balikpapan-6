@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/loginpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto Serif" rel="stylesheet">
     <title>Login Page</title>
 </head>
+
 <body>
-<div class="box">
-    <div class="card">
+    <div class="first">
         <div class="box2">
-            <div class="secondcard" style="width: 300px; height: 320px; background: rgba(148.75, 81.19, 87.02, 0.60); border-radius: 45px; padding: 0px 0px;"><br>
-                <h1>Make Them</h1><br>
-                <h1> Stop and</h1><br>
-                <h1>Stare</h1>
+            <h1>MAKE</h1>
+            <h1>THEM</h1>
+            <h1>STOP</h1>
+            <h1>AND</h1>
+            <h1>STARE</h1>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="title">
+            <h1>You’re in Login Area</h1>
+            <h2>Hello, fashion hunter!<br>Login to your account to access<br> the biggest online fashion marketplace
+                in Asia</h2>
+        </div>
+        <div class="formArea">
+            <form id="loginForm" action="#" method="post">
+                <div class="input-box">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <h2>or<br> login using your social network<h2>
+                <div class="icons">
+                    <div class="icon"><a href="https://m.twitter.com/login" style="color: #000000;"><ion-icon
+                                name="logo-twitter"></ion-icon></a></div>
+                    <div class="icon"><a href="https://myaccount.google.com" style="color: #000000;"><ion-icon
+                                name="logo-google"></ion-icon></a></div>
+                    <div class="icon"><a href="https://www.facebook.com" style="color: #000000;"><ion-icon
+                                name="logo-facebook"></ion-icon></a></div>
+                </div>
+                <div class="input-box">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="regis">
+                <h2>Doesn't have account?<br><a href="regist.html">Create Account</a></h2>
             </div>
         </div>
 
     </div>
-   
- <div class="second">
-    <H1 style="padding-top: 40px;">You’re in Login Area</H1>
-    <h1 style="color: black; font-size: 20px;">Hello, fashion hunter! Login to your account to access<br> the biggest online fashion marketplace in Asia</P>    
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            submitForm();
+        });
 
-<form id="loginForm" action="#" method="post">
-    <div class="input-box">
-    <label>E-mail</label>
-    <input type="email"  id="email" name="email" required>
-    </div>
-    <div class="input-box">
-    <label>Password</label>
-    <input type="password" id="password" name="password" required>
-    </div>
-    <h1 style="color: black; font-size: 18px; padding-right: 10px; padding-left: 40px;">or<br> login using your social network<br><br>
-    <span class="icon"><a href="https://m.twitter.com/login" style="color: #000000;"><ion-icon name="logo-twitter"></ion-icon></a></span>
-    <span class="icon"><a href="https://myaccount.google.com" style="color: #000000;"><ion-icon name="logo-google"></ion-icon></a></span>
-    <span class="icon"><a href="https://www.facebook.com" style="color: #000000;"><ion-icon name="logo-facebook"></ion-icon></a></span><br><br>
-    <input type="submit" id ="loginpage"></a></input>
-    </form>
-    <h1 style="color: black; font-size: 20px; padding-left: 30px;"> Doesn't have account?</h1> 
-    <a href="regist.html" style="color: black; font-size: 18px; font-weight: 400%; padding-left: 50px;">Create Account</a><br><br>
-
-</div>
-</div>
-<script>
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-event.preventDefault();
-submitForm();
-});
-
-function submitForm() {
+        function submitForm() {
             var username = document.getElementById("email").value;
             var password = document.getElementById("password").value;
-            }
-</script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
