@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../style/navBar.css">
     <link rel="stylesheet" href="../style/detailProduct.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Product Details</title>
 </head>
 
 <body>
@@ -92,52 +94,10 @@
                 </div>
             </div>
             <div class="right-add-button">
-                <button>Add to Cart</button>
-                <button>Buy Now</button>
+                <button onclick="order()">Add to Cart</button>
             </div>
         </div>
     </section>
-    <script>
-        function img(anything) {
-            document.querySelector('.slide').src = anything;
-        }
-
-        function change(change) {
-            const line = document.querySelector('.home');
-            line.style.background = change;
-        }
-
-        const quantityLabel = document.getElementById('quantityLabel');
-        const totalPriceLabel = document.getElementById('totalPrice');
-        let qty = 1;
-        let totalPrice = 150000;
-
-        function updateLabel() {
-            quantityLabel.textContent = qty.toString();
-            totalPriceLabel.textContent = (qty * totalPrice).toString(); 
-        }
-
-        document.querySelector('.increment').addEventListener('click', function () {
-            qty++;
-            updateLabel();
-        });
-
-        document.querySelector('.decrement').addEventListener('click', function () {
-            if (qty > 0) {
-                qty--;
-                updateLabel();
-            }
-        });
-
-        const colorButtons = document.querySelectorAll('.color-child');
-
-        colorButtons.forEach((button, index) => {
-            button.addEventListener('click', () => {
-                colorButtons.forEach(btn => btn.classList.remove('selected'));
-                button.classList.add('selected');
-            });
-        });
-    </script>
+    <script src="../script/detailProduct.js"></script>
 </body>
-
 </html>
