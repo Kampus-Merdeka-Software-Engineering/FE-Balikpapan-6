@@ -1,6 +1,12 @@
 body {
     background-color: #AC9C8D;
     font-family: 'Lexend Exa';
+    margin: 0;
+    padding: 0px;
+}
+
+header {
+    padding-bottom: 10px;
 }
 
 .section1 {
@@ -15,6 +21,7 @@ body {
     height: 100px;
     width: 100%;
     border-radius: 15px;
+    margin-top: 100px;
 }
 
 .material-icons, h2 {
