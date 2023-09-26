@@ -54,12 +54,10 @@ body {
     padding-right: 50px;
 }
 
-h1, h2 {
-    font-family: 'Noto Serif';
-}
-
 .title > h1 {
+    font-family: 'Noto Serif';
     font-weight:200;
+    font-size: 48px;
 }
 
 .formArea {
@@ -72,7 +70,7 @@ h1, h2 {
 input, button {
     text-align: center;
     width: 500px;
-    height: 40px;
+    height: 50px;
     background: rgba(114, 56, 61, 0.95);
     border-radius: 30px;
     margin-top: 10px;
@@ -85,7 +83,7 @@ input, button {
 }
 
 button {
-    width: 250px;
+    width: 150px;
 }
 
 .icons {
@@ -107,10 +105,17 @@ ion-icon {
 }
 
 .regis {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
-.regis > h2, .regis > a {
+.regis > h2 {
     text-align: center;
     font-size: 18px;
+}
+
+#directRegis {
+    font-size: 16px;
+    color: #72383D;
+    font-style: normal;
+    text-decoration: none;
 }

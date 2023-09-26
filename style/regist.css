@@ -54,12 +54,10 @@ body {
     padding-right: 50px;
 }
 
-h1, h2 {
-    font-family: 'Noto Serif';
-}
-
 .title > h1 {
+    font-family: 'Noto Serif';
     font-weight:200;
+    font-size: 48px;
 }
 
 .formArea {
@@ -99,11 +97,14 @@ button {
     width: 150px;
 }
 
-.login {
-    padding-top: 20px;
-}
-
-.login > h2, .regis > a {
+.login > h2 {
     text-align: center;
     font-size: 18px;
+}
+
+#directLogin {
+    font-size: 16px;
+    color: #72383D;
+    font-style: normal;
+    text-decoration: none;
 }
