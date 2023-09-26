@@ -8,6 +8,7 @@ body {
     background: linear-gradient(180deg, #AC9C8D 36%, rgba(209.43, 199.01, 187.92, 0.44) 69%, rgba(239, 233, 225, 0) 100%);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     min-height: 100vh;
     overflow-y: hidden;
@@ -119,4 +120,10 @@ ion-icon {
     color: #72383D;
     font-style: normal;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    .first {
+        display: none;
+    }
 }
