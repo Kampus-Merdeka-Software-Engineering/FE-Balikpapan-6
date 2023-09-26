@@ -4,12 +4,7 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    font-family: 'Lexend Exa';
-}
-
 body {  
-    font-family: 'Lexend Exa';
     background: linear-gradient(180deg, #AC9C8D 36%, rgba(209.43, 199.01, 187.92, 0.44) 69%, rgba(239, 233, 225, 0) 100%);
     display: flex;
     justify-content: space-around;
@@ -19,6 +14,7 @@ body {
 }
 
 .first {
+    font-family: 'Lexend Exa';
     height: 90vh;
     width: 90vh;
     background-image: url("../assets/login/bgLeft.png");
@@ -40,6 +36,7 @@ body {
 }
 
 .second {
+    font-family: 'Noto Serif KR';
     height: 80vh;
     width: 70vh;
     display: flex;
@@ -54,12 +51,9 @@ body {
     padding-right: 50px;
 }
 
-h1, h2 {
-    font-family: 'Noto Serif';
-}
-
 .title > h1 {
     font-weight:200;
+    font-size: 48px;
 }
 
 .formArea {
@@ -99,11 +93,14 @@ button {
     width: 150px;
 }
 
-.login {
-    padding-top: 20px;
-}
-
-.login > h2, .regis > a {
+.login > p {
     text-align: center;
     font-size: 18px;
+}
+
+#directLogin {
+    font-size: 16px;
+    color: #72383D;
+    font-style: normal;
+    text-decoration: none;
 }
