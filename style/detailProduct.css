@@ -149,6 +149,7 @@ button {
     position: right;
     right: 3px;
     opacity: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -167,13 +168,10 @@ button:hover {
 
 .right-add-button {
     padding-top: 15px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .right-add-button > button {
     width: 150px;
-    margin-right: 15px;
 }
 
 #quantityLabel {
