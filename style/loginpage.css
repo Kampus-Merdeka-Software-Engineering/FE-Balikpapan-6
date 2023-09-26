@@ -4,12 +4,7 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    font-family: 'Lexend Exa';
-}
-
 body {  
-    font-family: 'Lexend Exa';
     background: linear-gradient(180deg, #AC9C8D 36%, rgba(209.43, 199.01, 187.92, 0.44) 69%, rgba(239, 233, 225, 0) 100%);
     display: flex;
     justify-content: space-around;
@@ -19,6 +14,7 @@ body {
 }
 
 .first {
+    font-family: 'Lexend Exa';
     height: 90vh;
     width: 90vh;
     background-image: url("../assets/login/bgLeft.png");
@@ -46,18 +42,23 @@ body {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    font-family: 'Noto Serif KR';
 }
 
 .box2 > h1 {
     color: white;
     text-align: right;
     padding-right: 50px;
+    font-weight: bolder;
 }
 
 .title > h1 {
-    font-family: 'Noto Serif';
     font-weight:200;
     font-size: 48px;
+}
+
+.subtitle {
+    font-size: 24px;
 }
 
 .formArea {
@@ -108,7 +109,7 @@ ion-icon {
     padding-top: 10px;
 }
 
-.regis > h2 {
+.regis > p {
     text-align: center;
     font-size: 18px;
 }
