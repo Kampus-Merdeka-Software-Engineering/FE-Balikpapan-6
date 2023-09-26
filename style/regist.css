@@ -104,3 +104,9 @@ button {
     font-style: normal;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 1280px) {
+    .first {
+        display: none;
+    }
+}

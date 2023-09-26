@@ -69,9 +69,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .best {
+    margin: 25px;
     width: 400px;
     height: 600px;
     background-color: #D1C7BD;
@@ -169,4 +171,8 @@ body {
     background-color: #322D29;
 }
 
-
+@media only screen and (max-width: 1200px) {
+    .content-top-right {
+        display: none;
+    }
+}
