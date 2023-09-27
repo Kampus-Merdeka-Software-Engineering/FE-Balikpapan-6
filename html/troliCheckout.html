@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clo</title>
     <link href="../style/troliCheckout.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,6 +26,14 @@
             <div class="navbar-right">
                 <div class="nav-search">
                     <input type="text" placeholder="Search...">
+                </div>
+                <div class="nav-cart">
+                    <a href="troliCheckout.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path
+                                d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" fill="#EFE9E1" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="nav-profile">
                     <svg width="60" height="60" viewBox="0 0 75 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +80,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -91,7 +99,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -110,7 +118,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -129,7 +137,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -148,7 +156,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -167,7 +175,7 @@
                 <div class="itemContent2">
                     <div class="detailCheckout">
                         <div class="prod-name">T-Shirt</div>
-                        <div class="prod-price">RP150.000,-</div>
+                        <div class="prod-price">IDR 150000</div>
                         <div class="prod-color">
                             <div class="color">
                                 Color-Rose Gold <button class="color-child"></button>
@@ -185,7 +193,7 @@
                 <h3>ORDER LIST</h3>
             </div>
             <div class="right-price">
-                <h3><span class="total-price">Total Price: </span>Rp 150.000</h3>
+                <h3><span class="total-price">Total Price: </span>IDR 150000</h3>
             </div>
             <div class="input-address">
                 <input id="address" type="text" placeholder="Address" required>
@@ -193,7 +201,7 @@
                 <input id="province" type="text" placeholder="Province" required>
             </div>
             <div class="right-add-button">
-                <button class="checkout-button" onclick="order()">Checkout</button>
+                <button class="checkout-button" onclick="window.location.href = 'payment.html';">Checkout</button>
             </div>
         </div>
     </div>
