@@ -82,9 +82,6 @@ section {
 
 .right-caption {
     padding-top:20px;
-}
-
-.right-caption {
     font-size: 12px;
 }
 
@@ -172,6 +169,7 @@ button:hover {
 
 .right-add-button > button {
     width: 150px;
+    font-size: 18px;
 }
 
 #quantityLabel {
