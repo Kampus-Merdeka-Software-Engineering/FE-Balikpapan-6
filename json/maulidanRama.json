@@ -1,0 +1,37 @@
+[
+    {
+        "product_name": "Bracelet",
+        "price": 50000,
+        "color": "Red",
+        "category": "JEWELRY",
+        "product_img": "https://drive.google.com/uc?export=view&id=1SK7VZWVR2iJIbSzhMSGmWRMznfRtyMR1"
+    },
+    {
+        "product_name": "Blazer",
+        "price": 350000,
+        "color": "Gray",
+        "category": "FORMAL",
+        "product_img": "https://drive.google.com/uc?export=view&id=115lSg-5JbAMDXQGmnGBjxLrRsRP97f83"
+    },
+    {
+        "product_name": "Flower Earrings",
+        "price": 35000,
+        "color": "White",
+        "category": "JEWELRY",
+        "product_img": "https://drive.google.com/uc?export=view&id=1fIG14zRt5_I_Z8UcChzbLy-X5WRxyqob"
+    },
+    {
+        "product_name": "Chain",
+        "price": 30000,
+        "color": "Silver",
+        "category": "JEWELRY",
+        "product_img": "https://drive.google.com/uc?export=view&id=1p45EkcGSJCrWiJXtpKtDbJ88S94IQnDl"
+    },
+    {
+        "product_name": "Leather Jacket",
+        "price": 150000,
+        "color": "Black",
+        "category": "JACKET",
+        "product_img": "https://drive.google.com/uc?export=view&id=1_OmOGG8LksGRtVOFjG2Cr2VlkIypGsH5"
+    }
+]
