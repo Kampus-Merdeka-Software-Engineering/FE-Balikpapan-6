@@ -121,24 +121,39 @@ img {
 }
 
 @media (max-width: 768px) {
-    .imgRow {
-        flex-direction: column; /* Stack the elements vertically */
-        align-items: center; /* Center-align the elements */
-        padding: 0; /* Remove the horizontal padding */
-    }
-
-    /* Optionally, you can adjust the styling for individual images here */
-    .imgRow img {
-        margin-bottom: 20px; /* Add some space between stacked images */
-    }
-
     #buttonRow {
         justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .item {
+        margin-bottom: 25px;
     }
 
     .category {
         padding: 0;
         display: flex;
         justify-content: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1720px) {
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        margin-bottom: 25px;
     }
 }
