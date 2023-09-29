@@ -76,7 +76,7 @@ body {
 .best {
     margin: 25px;
     width: 400px;
-    height: 600px;
+    height: 500px;
     background-color: #D1C7BD;
     border-radius: 15px;
 }
@@ -93,13 +93,10 @@ body {
     color: #311C1E;
 }
 
-.name-best, .diskon-best, .after-disc-best {
+.name-best, .price {
     margin-top: 20px;
 }
 
-.diskon-best {
-    text-decoration: line-through;
-}
 
 .name-best {
     font-size: 36px;
