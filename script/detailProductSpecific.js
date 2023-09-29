@@ -7,7 +7,7 @@ fetch('../json/dataExample2.json')
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
-async function generateProduct(data) {
+function generateProduct(data) {
     const productContainer = document.getElementById('productList');
     const productDiv = document.createElement('div');
     productDiv.classList.add('item');
