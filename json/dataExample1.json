@@ -3,18 +3,21 @@
         "product_name": "Shirt",
         "price": 150000,
         "color": "Red",
+        "category": "SHIRT",
         "product_img": "https://drive.google.com/uc?export=view&id=1ftN7sqO8AgrZkwSzl9vFdTMvBvtMZGCq"
     },
     {
         "product_name": "Blazer",
         "price": 150000,
         "color": "Blue",
+        "category": "FORMAL",
         "product_img": "https://drive.google.com/uc?export=view&id=1S2hiElvC5w9YgBJBv_KCmMapxuGZDWvQ"
     },
     {
         "product_name": "Pants",
         "price": 150000,
         "color": "Green",
+        "category": "PANTS",
         "product_img": "https://drive.google.com/uc?export=view&id=1PL7ZLrwcBm3ZhQthd-K3fsHN8lSuLEeo"
     }
 ]
