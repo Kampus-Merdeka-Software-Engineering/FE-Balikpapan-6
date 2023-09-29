@@ -1,4 +1,6 @@
-fetch('../json/dataExample1.json')
+let color = []
+
+fetch('../json/maulidanRama.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(data => {
@@ -6,20 +8,20 @@ fetch('../json/dataExample1.json')
         });
     })
     .catch(error => console.error('Error fetching JSON:', error));
-    
+
+fetch('../json/color.json')
+    .then(response => response.json())
+    .then(data => {
+        color = data
+    })
+    .catch(error => console.error('Error fetching JSON:', error));
+
 function generateTroli(data) {
     const productContainer = document.getElementById('productContainer');
     const productDiv = document.createElement('div');
     productDiv.classList.add('item');
-
-    const colorToBackgroundColor = {
-        "Red": "red",
-        "Blue": "blue",
-        "Green": "green",
-    };
-
-    // Default color
-    const backgroundColor = colorToBackgroundColor[data.color] || "gray";
+    
+    const backgroundColor = color[data.color] || "gray";
 
     const image = new Image();
     image.src = data.product_img;
