@@ -20,7 +20,7 @@ function generateProduct(product) {
         productDiv.innerHTML = `
             <img src="${product.product_img}" alt="${product.product_name}">
             <div class="best-caption">
-                <div class="name-best">
+                <div class="name-best" title="${product.product_name}">
                     <h3>${product.product_name}</h3>
                 </div>
                 <div class="price">

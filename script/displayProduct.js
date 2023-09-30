@@ -27,7 +27,7 @@ function generateProduct1(data) {
             <div class="item-image">
                 <img src="${data.product_img}" alt="${data.product_img}">
             </div>
-            <div class="item-name">${data.product_name}</div>
+            <div class="item-name" title="${data.product_name}">${data.product_name}</div>
             <div class="item-price">IDR ${data.price}</div>
             <div class="item-button">
                 <button class="prod-button" onclick="window.location.href = 'detailProduct.html';">Add to Cart</button>
@@ -52,7 +52,7 @@ function generateProduct2(data) {
             <div class="item-image">
                 <img src="${data.product_img}" alt="${data.product_img}">
             </div>
-            <div class="item-name">${data.product_name}</div>
+            <div class="item-name" title="${data.product_name}">${data.product_name}</div>
             <div class="item-price">IDR ${data.price}</div>
             <div class="item-button">
                 <button class="prod-button" onclick="window.location.href = 'detailProduct.html';">Add to Cart</button>
@@ -76,7 +76,7 @@ function generateProduct3(data) {
             <div class="item-image">
                 <img src="${data.product_img}" alt="${data.product_img}">
             </div>
-            <div class="item-name">${data.product_name}</div>
+            <div class="item-name" title="${data.product_name}">${data.product_name}</div>
             <div class="item-price">IDR ${data.price}</div>
             <div class="item-button">
                 <button class="prod-button" onclick="window.location.href = 'detailProduct.html';">Add to Cart</button>
