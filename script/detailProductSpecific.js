@@ -1,4 +1,4 @@
-fetch('../json/dataExample2.json')
+fetch('../json/adeAyu.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(data => {
@@ -21,7 +21,7 @@ function generateProduct(data) {
             <div class="item-image">
                 <img src="${data.product_img}" alt="${data.product_img}">
             </div>
-            <div class="item-name">${data.product_name}</div>
+            <div class="item-name" title="${data.product_name}">${data.product_name}</div>
             <div class="item-price">IDR ${data.price}</div>
             <div class="item-button">
                 <button onclick="window.location.href = 'detailProduct.html';">Add to Cart</button>
