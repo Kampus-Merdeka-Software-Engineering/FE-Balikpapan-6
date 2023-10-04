@@ -1,0 +1,22 @@
+### getOrderByCustomerId
+GET https://be-balikpapan-6-production.up.railway.app/api/order/getOrderByCustomerId/2
+User-Agent: rest-client
+Content-Type: application/json
+
+### createOrder
+POST https://be-balikpapan-6-production.up.railway.app/api/order/createOrder
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "customer_id": 2
+}
+
+### orderComplete
+PUT https://be-balikpapan-6-production.up.railway.app/api/order/orderComplete
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "order_id": 4
+}

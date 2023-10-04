@@ -1,0 +1,14 @@
+### getPaymentByInvoiceId
+GET https://be-balikpapan-6-production.up.railway.app/api/payment/getPaymentByInvoiceId/6
+User-Agent: rest-client
+Content-Type: application/json
+
+### createPayment
+POST https://be-balikpapan-6-production.up.railway.app/api/payment/createPayment
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "invoice_id": 1,
+    "payment_amount": 50000,
+}

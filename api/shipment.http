@@ -1,0 +1,16 @@
+### getShipmentByInvoiceId
+GET https://be-balikpapan-6-production.up.railway.app/api/shipment/getShipmentByInvoiceId/4
+User-Agent: rest-client
+Content-Type: application/json
+
+### createShipment
+POST https://be-balikpapan-6-production.up.railway.app/api/shipment/createShipment
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "invoice_id": 4,
+    "address": "Jl. Derizheese",
+    "city": "Medan",
+    "province": "Sumatra Utara"
+}

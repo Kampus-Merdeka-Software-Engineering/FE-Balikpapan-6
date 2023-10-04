@@ -1,0 +1,24 @@
+### getProducts
+GET https://be-balikpapan-6-production.up.railway.app/api/product/getProducts
+User-Agent: rest-client
+Content-Type: application/json
+
+### getProductById
+GET https://be-balikpapan-6-production.up.railway.app/api/product/getProductById/4
+User-Agent: rest-client
+Content-Type: application/json
+
+### getProductsByCategory
+GET https://be-balikpapan-6-production.up.railway.app/api/product/getProductsByCategory/FORMAL
+User-Agent: rest-client
+Content-Type: application/json
+
+### updateProductQty
+PUT https://be-balikpapan-6-production.up.railway.app/api/product/updateProductQty
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "product_id": 4,
+    "qty": 8
+}
