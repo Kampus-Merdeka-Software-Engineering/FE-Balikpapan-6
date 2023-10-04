@@ -78,7 +78,7 @@ async function deleteOrder (orderItemId) {
         title: 'Order Item Deleted!',
         icon: 'success',
     }).then(() => {
-        generateTroli();
+        location.reload();
     });
 }
 
