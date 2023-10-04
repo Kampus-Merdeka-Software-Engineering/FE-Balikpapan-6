@@ -1,0 +1,51 @@
+[
+    {
+        "product_name": "Semi Parka",
+        "price": 225000,
+        "color": "Black",
+        "category": "JACKET",
+        "product_img": "https://drive.google.com/uc?export=view&id=1Fr8nDmDVGH3BiLxQeSQbX-D3IlTmbWi_"
+    },
+    {
+        "product_name": "Parka",
+        "price": 275000,
+        "color": "Green",
+        "category": "JACKET",
+        "product_img": "https://drive.google.com/uc?export=view&id=1ObZaBdyEV_4P5ns_Y2_ZGA7pyoH_T22W"
+    },
+    {
+        "product_name": "Classic Hoodie",
+        "price": 195000,
+        "color": "Gray",
+        "category": "JACKET",
+        "product_img": "https://drive.google.com/uc?export=view&id=1nmxItonuq1_IOgW6phjIuE21o38Aik6e"
+    },
+    {
+        "product_name": "Bomber",
+        "price": 235000,
+        "color": "Green",
+        "category": "JACKET",
+        "product_img": "https://drive.google.com/uc?export=view&id=1UmP1LsyBUewKJ9WeCBAMKlBpP7ofsz7W"
+    },
+    {
+        "product_name": "Cargo Pants",
+        "price": 150000,
+        "color": "Gray",
+        "category": "PANTS",
+        "product_img": "https://drive.google.com/uc?export=view&id=1oaCwcS12AKycpqUe53wyHtt_zB26Rt-B"
+    },
+    {
+        "product_name": "Chino",
+        "price": 105000,
+        "color": "Gray",
+        "category": "PANTS",
+        "product_img": "https://drive.google.com/uc?export=view&id=1Xl_NIh0Bcvn7-qrydarqV0r5J01P9EBC"
+    },
+    {
+        "product_name": "Shorts",
+        "price": 75000,
+        "color": "Gray",
+        "category": "PANTS",
+        "product_img": "https://drive.google.com/uc?export=view&id=1M4nUcgI49UmGOCJnOGptJa_WAh8WA14C"
+    }
+]
