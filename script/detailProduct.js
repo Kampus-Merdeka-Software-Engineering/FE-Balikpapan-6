@@ -1,45 +1,22 @@
-function img(anything) {
-    document.querySelector('.slide').src = anything;
+async function loadProductDetail () {
+    let id = sessionStorage.getItem('product_id');
+    let response = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/product/getProductById/` + id);
+    let data = await response.json();
+    data = data.data;
+    
+    $('#prodImg').attr('src', data.product_img);
+    $('#prodName').text(data.product_name);
+    $('#prodPrice').text("IDR " + data.price);
+    $('#prodColor').text("Color: " + data.color);
+    $('#totalPrice').text(data.price);
+    $('.color-child').css('background-color', data.color);
+    $('#inpProdId').val(data.product_id);
+    $('#inpQty').val(1);
+    $('#inpTotalPrice').val(data.price);
+    $('#inpActPrice').val(data.price);
 }
 
-function change(change) {
-    const line = document.querySelector('.home');
-    line.style.background = change;
-}
-
-const quantityLabel = document.getElementById('quantityLabel');
-const totalPriceLabel = document.getElementById('totalPrice');
-let qty = 1;
-let totalPrice = 150000;
-
-function updateLabel() {
-    quantityLabel.textContent = qty.toString();
-    totalPriceLabel.textContent = (qty * totalPrice).toString(); 
-}
-
-document.querySelector('.increment').addEventListener('click', function () {
-    qty++;
-    updateLabel();
-});
-
-document.querySelector('.decrement').addEventListener('click', function () {
-    if (qty > 0) {
-        qty--;
-        updateLabel();
-    }
-});
-
-const colorButtons = document.querySelectorAll('.color-child');
-
-colorButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        colorButtons.forEach(btn => btn.classList.remove('selected'));
-        button.classList.add('selected');
-    });
-});
-
-
-function order() {
+function order () {
     Swal.fire({
         title: 'Your order is in process',
         icon: 'question',
@@ -51,8 +28,49 @@ function order() {
     }).then((result) => {
         if (result.isConfirmed) {
             window.location.href = '../html/troliCheckout.html';
-        } else {
+        } else if (!result.isConfirmed) {
             window.location.href = '../html/troliCheckout.html';
         }
     });
 }
+
+function incrementQuantity() {
+    let quantityLabel = document.getElementById("quantityLabel");
+    let inpQty = document.getElementById("inpQty");
+    let inpPrice = document.getElementById("inpActPrice");
+    let totalPrice = document.getElementById("totalPrice");
+
+    let currentQuantity = parseInt(quantityLabel.innerText);
+    let price = parseFloat(inpPrice.value);
+    let newQuantity = currentQuantity + 1;
+    let newTotalPrice = newQuantity * price;
+
+    quantityLabel.innerText = newQuantity;
+    inpQty.value = newQuantity;
+    totalPrice.innerText = newTotalPrice;
+    $('#inpTotalPrice').val(newTotalPrice);
+}
+
+function decrementQuantity() {
+    let quantityLabel = document.getElementById("quantityLabel");
+    let inpQty = document.getElementById("inpQty");
+    let inpPrice = document.getElementById("inpActPrice");
+    let totalPrice = document.getElementById("totalPrice");
+    
+    let currentQuantity = parseInt(quantityLabel.innerText);
+    let price = parseFloat(inpPrice.value);
+    
+    if (currentQuantity > 1) {
+        let newQuantity = currentQuantity - 1;
+        let newTotalPrice = newQuantity * price;
+        
+        quantityLabel.innerText = newQuantity;
+        inpQty.value = newQuantity;
+        totalPrice.innerText = newTotalPrice;
+        $('#inpTotalPrice').val(newTotalPrice);
+    }
+}
+
+loadProductDetail ();
+document.querySelector(".increment").addEventListener("click", incrementQuantity);
+document.querySelector(".decrement").addEventListener("click", decrementQuantity);

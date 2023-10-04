@@ -7,7 +7,7 @@ fetch('../json/dataExample1.json')
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
-function generateProduct(product) {debugger
+function generateProduct(product) {
     const bestSellingContainer = document.getElementById('best-selling-container');
     const productDiv = document.createElement('div');
     productDiv.classList.add('best');

@@ -121,7 +121,11 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.right-add-button > button:hover {
+    background-color: #322D29;
+}
+
+.add > button:hover {
     background-color: #322D29;
 }
 
