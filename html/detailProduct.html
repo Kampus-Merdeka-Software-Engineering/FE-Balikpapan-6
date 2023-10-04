@@ -16,23 +16,21 @@
     <section>
         <div class="left">
             <div class="main_image">
-                <img src="../assets/detailProduct/p1.jpg" class="slide">
+                <img id="prodImg" src="">
             </div>
         </div>
         <div class="right">
             <div class="right-title">
-                <h3>TROUSER</h3>
+                <h3 id="prodName">TROUSER</h3>
             </div>
             <div class="right-price">
-                <h4>IDR 150000</h4>
+                <h4 id="prodPrice">IDR 150000</h4>
             </div>
             <div class="right-caption">
-                <p>Available in a range of versatile colors, our classic trousers can be easily paired with a variety of
-                    shirts,
-                    blazers, and shoes. Mix and match to create a variety of stylish outfits.</p>
+                <p>Our georgeous product will be suitable to you. Mix and match to create a variety of stylish outfits.</p>
             </div>
             <div class="right-color">
-                <h3>Color-Rose Gold</h3>
+                <h3 id="prodColor">Color: </h3>
                 <div class="color">
                     <button class="color-child"></button>
                 </div>
@@ -51,6 +49,14 @@
             </div>
         </div>
     </section>
+    <div>
+        <input type="hidden" id="inpProdId">
+        <input type="hidden" id="inpTotalPrice">
+        <input type="hidden" id="inpActPrice">
+        <input type="hidden" id="inpQty">
+        <input type="hidden" id="inpCustId">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/detailProduct.js"></script>
     <script src="../script/navBar.js"></script>
 </body>

@@ -1,10 +1,24 @@
 ### getCustomerById
-GET https://be-balikpapan-6-production.up.railway.app/api/customer/2
+GET http://be-balikpapan-6-production.up.railway.app/api/customer/getCustomerById/2
 User-Agent: rest-client
 Content-Type: application/json
 
+### getCustomerByUserId
+GET http://be-balikpapan-6-production.up.railway.app/api/customer/getCustomerByUserId/1
+User-Agent: rest-client
+Content-Type: application/json
+
+### createCustomer
+POST http://be-balikpapan-6-production.up.railway.app/api/customer/createCustomer
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "user_id": 2
+}
+
 ### updateNewCustInd
-POST https://be-balikpapan-6-production.up.railway.app/api/customer/update
+POST http://be-balikpapan-6-production.up.railway.app/api/customer/update
 User-Agent: rest-client
 Content-Type: application/json
 

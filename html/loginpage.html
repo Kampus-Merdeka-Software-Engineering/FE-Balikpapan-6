@@ -55,18 +55,9 @@
             <p>Doesn't have account?<br><a id="directRegis" href="regist.html">Create Account</a></p>
         </div>
     </div>
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            submitForm();
-        });
-
-        function submitForm() {
-            var username = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-        }
-    </script>
+    <script src="../script/login.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
