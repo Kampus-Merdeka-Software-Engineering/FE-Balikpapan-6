@@ -97,9 +97,18 @@ body {
     margin-top: 20px;
 }
 
+.item-image img {
+    width: 400px;
+    height: 250px;
+    border-radius: 25px 25px 0px 0px;
+}
 
 .name-best {
-    font-size: 36px;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .button-more {

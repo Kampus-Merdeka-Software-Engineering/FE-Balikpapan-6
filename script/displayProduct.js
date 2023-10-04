@@ -40,9 +40,9 @@ async function generateProduct5() {
 
 function generateProduct(data, id) {
     const productContainer = document.getElementById(id);
+    data.sort(() => getRandomSortValue());
 
-    let index = 0;
-    for (let i in data) {
+    for (let i=0; i<5; i++) {
         const productDiv = document.createElement('div');
         productDiv.classList.add('item');
 
@@ -63,16 +63,16 @@ function generateProduct(data, id) {
             `;
             productContainer.appendChild(productDiv);
         });
-        index++;
-        if (index == 5) {
-            break;
-        }
     }
 }
 
 function directToDisplayProductSpecific (category) {
     sessionStorage.setItem('category', category);
     window.location.href = "displayProductSpecific.html";
+}
+
+function getRandomSortValue() {
+    return Math.random() * 2 - 1;
 }
 
 generateProduct1();
