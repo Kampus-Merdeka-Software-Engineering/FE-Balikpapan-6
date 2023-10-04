@@ -105,34 +105,6 @@ section {
     border: 1px solid black;
 }
 
-.color-child:hover {
-    border: 2px solid red;
-} 
-
-.color-child.selected {
-    border: 2px solid blue;
-}
-
-.color-child:nth-child(2) {
-    background: #EDEDED;
-}
-
-.color-child:nth-child(3) {
-    background: #D5D6D8;
-}
-
-.color-child:nth-child(4) {
-    background: #EFE0DE;
-}
-
-.color-child:nth-child(5) {
-    background: #AB8ED1;
-}
-
-.color-child:nth-child(6) {
-    background: #F04D44;
-}
-
 button {
     text-align: center;
     width: 200px;
