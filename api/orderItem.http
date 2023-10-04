@@ -1,0 +1,29 @@
+### getOrderItemById
+GET https://be-balikpapan-6-production.up.railway.app/api/orderItem/getOrderItemById/3
+User-Agent: rest-client
+Content-Type: application/json
+
+### getOrderItemsByOrderId
+GET https://be-balikpapan-6-production.up.railway.app/api/orderItem/getOrderItemsByOrderId/6
+User-Agent: rest-client
+Content-Type: application/json
+
+### createOrderItem
+POST https://be-balikpapan-6-production.up.railway.app/api/orderItem/createOrderItem
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "product_id": 7,
+    "customer_id": 2,
+    "order_qty": 1
+}
+
+### deleteOrderItem
+PUT https://be-balikpapan-6-production.up.railway.app/api/orderItem/deleteOrderItem
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "order_item_id": 2
+}

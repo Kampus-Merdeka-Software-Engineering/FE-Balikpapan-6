@@ -1,0 +1,46 @@
+### getUsers
+GET https://be-balikpapan-6-production.up.railway.app/api/user/getAllUser
+User-Agent: rest-client
+Content-Type: application/json
+
+### getUserById
+GET https://be-balikpapan-6-production.up.railway.app/api/user/getUserById/1
+User-Agent: rest-client
+Content-Type: application/json
+
+### createUser
+POST https://be-balikpapan-6-production.up.railway.app/api/user/create
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "name": "User Testing 5",
+    "username": "testinguser5",
+    "birthdate": "2002-05-01T07:00:00.000+07:00",
+    "email": "testinguser5@email.com",
+    "password": "tes123"
+}
+
+### updateUserById
+PUT https://be-balikpapan-6-production.up.railway.app/api/user/update
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "user_id": 5,
+    "name": "User Testing 2",
+    "username": "testinguser2",
+    "birthdate": "2002-05-02T07:00:00.000+07:00",
+    "email": "testinguser2@email.com",
+    "password": "tes123"
+}
+
+### updateUserById
+PUT https://be-balikpapan-6-production.up.railway.app/api/user/login
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "email": "derizheesse@gmail.com",
+    "password": "tes123"
+}

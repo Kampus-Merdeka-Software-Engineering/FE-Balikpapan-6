@@ -1,0 +1,18 @@
+### getPaymentMethodByCustomerId
+GET https://be-balikpapan-6-production.up.railway.app/api/paymentMethod/getPaymentMethodByCustomerId/2
+User-Agent: rest-client
+Content-Type: application/json
+
+### createPaymentMethod
+POST https://be-balikpapan-6-production.up.railway.app/api/paymentMethod/createPaymentMethod
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "customer_id": 2,
+    "card_no": 1234567898765432,
+    "card_holder": "DERIZHEESE",
+    "expiration_month": "02",
+    "expiration_year": "2024",
+    "cvv": 2143
+}

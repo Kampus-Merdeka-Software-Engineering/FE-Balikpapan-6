@@ -1,0 +1,32 @@
+### getInvoiceByOrderId
+GET https://be-balikpapan-6-production.up.railway.app/api/invoice/getInvoiceByOrderId/6
+User-Agent: rest-client
+Content-Type: application/json
+
+### createInvoice
+POST https://be-balikpapan-6-production.up.railway.app/api/invoice/createInvoice
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "order_id": 6,
+    "payment_amount": 50000
+}
+
+### paidInvoice
+PUT https://be-balikpapan-6-production.up.railway.app/api/invoice/paidInvoice
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "invoice_id": 1
+}
+
+### cancelInvoice
+PUT https://be-balikpapan-6-production.up.railway.app/api/invoice/cancelInvoice
+User-Agent: rest-client
+Content-Type: application/json
+
+{
+    "invoice_id": 3
+}

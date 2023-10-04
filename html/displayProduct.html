@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clo</title>
+    <link href="../style/displayProduct.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../style/navBar.css">
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="title">
+            <h1>PRODUCT<span id="spanH1">COLLECTION</span></h1>
+        </div>
+        <div data-aos="fade-right" class="prod-category">
+            <div class="category">FORMAL</div>
+            <div class="content" id="productList1"></div>
+            <div id="buttonRow">
+                <button class="more-button" onClick="directToDisplayProductSpecific('FORMAL')">MORE</button>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="prod-category">
+            <div class="category">JACKET</div>
+            <div class="content" id="productList2"></div>
+            <div id="buttonRow">
+                <button class="more-button" onClick="directToDisplayProductSpecific('JACKET')">MORE</button>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="prod-category">
+            <div class="category">PANTS</div>
+            <div class="content" id="productList3"></div>
+            <div id="buttonRow">
+                <button class="more-button" onClick="directToDisplayProductSpecific('PANTS')">MORE</button>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="prod-category">
+            <div class="category">JEWELRY</div>
+            <div class="content" id="productList4"></div>
+            <div id="buttonRow">
+                <button class="more-button" onClick="directToDisplayProductSpecific('JEWELRY')">MORE</button>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="prod-category">
+            <div class="category">SHIRT</div>
+            <div class="content" id="productList5"></div>
+            <div id="buttonRow">
+                <button class="more-button" onClick="directToDisplayProductSpecific('SHIRT')">MORE</button>
+            </div>
+        </div>
+    </div>
+    <script src="../script/navBar.js"></script>
+    <script src="../script/displayProduct.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

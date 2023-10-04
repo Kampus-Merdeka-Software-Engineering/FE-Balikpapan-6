@@ -1,0 +1,138 @@
+[
+    {
+      "product_name": "Straight Leg Pants",
+      "price": 150000,
+      "color": "Brown",
+      "category": "PANTS",
+      "product_img": "https://drive.google.com/uc?export=view&id=15m_I7PfFC1BO6VqaovhrdZAe8vEh3OvK"
+    },
+  
+    { 
+      "product_name": "Pocket Cotton Pants",
+      "price": 250000,
+      "color": "Brown",
+      "category": "PANTS",
+      "product_img": "https://drive.google.com/uc?export=view&id=1-vRew0Qws67azwvIJcdAb7B1iI9WRn1_"
+    },
+  
+    { 
+      "product_name": "Floral Print Shirt",
+      "price": 150000,
+      "color": "Black",
+      "category": "SHIRT",
+      "product_img": "https://drive.google.com/uc?export=view&id=1Kc0sx6qNmjVknHi5vAS-kkdtvIKkOiGV"
+    },
+  
+    { 
+      "product_name": "Chrochet Shirt",
+      "price": 100000,
+      "color": "Green",
+      "category": "SHIRT",
+      "product_img": "https://drive.google.com/uc?export=view&id=1z7pg9f7bUIiY9zeEBgBBMqz-xvZ27hBD"
+    },
+  
+    { 
+      "product_name": "Pattern Shirt",
+      "price": 100000,
+      "color": "Brown",
+      "category": "SHIRT",
+      "product_img": "https://drive.google.com/uc?export=view&id=1yDT5__Vbb5Kd_TxzBB02lnWOMIWKU_GH"
+    },
+  
+    { 
+      "product_name": "Summer Shirt",
+      "price": 100000,
+      "color": "White",
+      "category": "Brown",
+      "product_img": "https://drive.google.com/uc?export=view&id=1wtIxlgTPNVHE-JVak5y3HXVbgw-QNBfP"
+    },
+  
+    { 
+      "product_name": "Knit Polo Shirt",
+      "price": 150000,
+      "color": "Brown",
+      "category": "SHIRT",
+      "product_img": "https://drive.google.com/uc?export=view&id=1zW8Tin38U3yVkd7x40hROJ0qadPfNirL"
+    },
+  
+    { 
+      "product_name": "Korean Blazer",
+      "price": 250000,
+      "color": "Black",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1X5V6-pEqtQhW7aByDJnRx9WWt3WLyIAY"
+    },
+    
+    { 
+      "product_name": "Strellson Summer Blazer",
+      "price": 250000,
+      "color": "Brown",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1sGMtolDTfrHAIFj00GITjubGabwg4VL4"
+    },
+    
+    { 
+      "product_name": "Knot Front Blazer",
+      "price": 200000,
+      "color": "Brown",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1VII63aZjwp6HXL4DiQMfHtRdipng5J75"
+    },
+  
+    { 
+      "product_name": "Casual Blazer",
+      "price": 150000,
+      "color": "Brown",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1ep3fiiDcdK9aonYN8rdH-8o2EyBBR1AG"
+    },
+  
+    { 
+      "product_name": "Knit Blazer",
+      "price": 120000,
+      "color": "Brown",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1uqmlgdEOcuRXvtylpggoBHWfTkutbw4H"
+    }, 
+  
+    { 
+      "product_name": "One Set Blazer",
+      "price": 350000,
+      "color": "Black",
+      "category": "FORMAL",
+      "product_img": "https://drive.google.com/uc?export=view&id=1RfbmbV2RCOZ9prqMiW5hrsbdG1b1RKTE"
+    },
+  
+    { 
+      "product_name": "Plated Necklace",
+      "price": 100000,
+      "color": "Black",
+      "category": "JEWELRY",
+      "product_img": "https://drive.google.com/uc?export=view&id=1bJBEokHhgEtF42JVCLd0VuvyBHiFRvG1"
+    },
+  
+    { 
+      "product_name": "Victorian Earrings",
+      "price": 100000,
+      "color": "Black",
+      "category": "JEWELRY",
+      "product_img": "https://drive.google.com/uc?export=view&id=1nFPlc7Z7xWaM-VJoUmC02-Oi3LbTFMI3"
+    },
+  
+    { 
+      "product_name": "Geomatric Hoop Earrings",
+      "price": 80000,
+      "color": "Black",
+      "category": "JEWELRY",
+      "product_img": "https://drive.google.com/uc?export=view&id=1tkSTbTTkM5rm0ay-qjrdCjEke-rY0lk0"
+    },
+  
+    { 
+      "product_name": "Victorian Neclace",
+      "price": 120000,
+      "color": "Black",
+      "category": "JEWELRY",
+      "product_img": "  https://drive.google.com/uc?export=view&id=11UkT7QoXg2AuAm38zyKKnTpDiRiuGhP1"
+    }
+  ]
+  

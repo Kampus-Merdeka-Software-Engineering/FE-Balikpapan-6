@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto Serif KR" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clo</title>
@@ -17,7 +18,7 @@
     <header></header>
     <!-- MAIN PAGE -->
     <div class="content-top" id="mainPage">
-        <div class="content-top-left">
+        <div data-aos="fade-right" class="content-top-left">
             <div class="top-text">
                 <h1><span id="discover">DISCOVER</span> AND FIND</h1>
                 <h1>YOUR OWN STYLE</h1>
@@ -30,25 +31,29 @@
                     as a natural trendsetter.</p><br>
             </div>
             <div class="button-explore">
-                <button class="rectangle-button" onclick="window.location.href = 'displayProductPage.html';">EXPLORE NOW</button>
+                <button class="rectangle-button" onclick="window.location.href = 'displayProduct.html';">EXPLORE NOW</button>
             </div>
         </div>
-        <div class="content-top-right">
+        <div data-aos="fade-left" class="content-top-right">
             <img src="../assets/landingPage/bestPrev.png" alt="mainpicture">
         </div>
     </div>
     <!-- bottom -->
     <div id="bestSelling"></div>
-    <div class="bottom">
+    <div data-aos="fade-right" class="bottom">
         <div class="bottom-text">
             <h2>BEST SELLING</h2>
         </div>
         <div class="best-selling" id="best-selling-container"></div>
         <div class="button-more">
-            <button onclick="window.location.href = 'displayProductPage.html';" class="rectangle-button">MORE</button>
+            <button data-aos="zoom-in" onclick="window.location.href = 'displayProduct.html';" class="rectangle-button">MORE</button>
         </div>
-        <script src="../script/navBar.js"></script>
-        <script src="../script/landing.js"></script>
     </div>
+    <script src="../script/landing.js"></script>
+    <script src="../script/navBar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

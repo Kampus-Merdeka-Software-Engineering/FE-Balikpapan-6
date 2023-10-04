@@ -1,0 +1,164 @@
+
+* {
+    font-family: 'Lexend Exa';
+    margin: 0;
+}
+
+body {
+    background-color: #AC9C8D;
+}
+h1 {
+    padding-top: 100px;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+#spanH1 {
+    color: white;
+}
+
+.category {
+    color: white;
+    font-size: 56px;
+    padding-top: 30px;
+    padding: 0px 100px;
+}
+
+img {
+    height: 450px;
+    width: 350px;
+}
+
+.product-row {
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-category {
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+}
+
+#buttonRow {
+    padding: 25px 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    height: 400px;
+    width: 300px;
+    background-color: #72383D;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item-image img {
+    width: 300px;
+    height: 200px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.item-name, .item-price {
+    padding-top: 15px;
+    font-family: 'Noto Serif KR';
+    color: #D9D9D9;
+}
+
+.item-name {
+    font-size: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.item-price {
+    font-size: 20px
+}
+
+.prod-button {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: #AC9C8D;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: #fff; 
+    border: 10px; 
+    cursor: pointer;
+    position: right;
+    right: 3px;
+    opacity: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.prod-button:hover {
+    background-color: #322D29;
+}
+
+.more-button {
+    height: 75px;
+    width: 200px;
+    background-color: #72383D;
+    color: white;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 0px;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #A04D53;
+}
+
+@media (max-width: 768px) {
+    #buttonRow {
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .item {
+        margin-bottom: 25px;
+    }
+
+    .category {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1720px) {
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        margin-bottom: 25px;
+    }
+}
