@@ -32,7 +32,7 @@
                     <input id="email" type="e-mail" placeholder="Email" required>
                     <input id="username" type="username" placeholder="Username" required>
                     <input id="password" type="password" placeholder="Password" required>
-                    <input type="password" placeholder="Confirm your password" required>
+                    <input id="confirmPassword" type="password" placeholder="Confirm your password" required>
                 </div>
                 <button type="submit">SUBMIT</button>
             </form>
@@ -42,11 +42,7 @@
         </div>
     </div>
     </div>
-    <script>
-        document.getElementById("registForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            submitForm();
-        });
-    </script>
+    <script src="../script/register.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>

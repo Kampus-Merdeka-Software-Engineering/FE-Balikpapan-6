@@ -98,6 +98,10 @@ button {
     font-size: 18px;
 }
 
+.password-mismatch {
+    border: 5px solid red;
+}
+
 #directLogin {
     font-size: 16px;
     color: #72383D;

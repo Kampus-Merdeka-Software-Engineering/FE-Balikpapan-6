@@ -4,8 +4,9 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 });
 
 async function submitForm() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let validUserFound = false;
 
     let response1 = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/user/getAllUser`);
     let data = await response1.json();
@@ -19,10 +20,14 @@ async function submitForm() {
             sessionStorage.clear();
             sessionStorage.setItem('customer_id', customer[0].customer_id);
             window.location.href = "landing.html";
+            validUserFound = true;
+            break;
         }
     }
-    Swal.fire({
-        title: 'Email or Password is invalid',
-        icon: 'error',
-    });
+    if (!validUserFound) {
+        Swal.fire({
+            title: 'Email or Password is invalid',
+            icon: 'error',
+        });
+    }
 }
