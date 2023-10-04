@@ -25,11 +25,25 @@ function order () {
         cancelButtonText: 'Add to Cart',
         cancelButtonColor: '#72383D',
         confirmButtonText: 'Checkout Now'
-    }).then((result) => {
+    }).then(async (result) => {
+        let json = {}
+        json.customer_id = parseInt(sessionStorage.getItem('customer_id'));
+        json.product_id = parseInt(sessionStorage.getItem('product_id'));
+        json.order_qty = parseInt($('#inpQty').val());
+        json = JSON.stringify(json)
+
+        let productResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/orderItem/createOrderItem`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: json
+        });
+        let data = await productResponse.json();
         if (result.isConfirmed) {
             window.location.href = '../html/troliCheckout.html';
         } else if (!result.isConfirmed) {
-            window.location.href = '../html/troliCheckout.html';
+            window.history.back()
         }
     });
 }
