@@ -10,7 +10,7 @@ header {
 }
 
 .section1 {
-    margin: 100px;
+    margin: 0px 100px 25px 100px;
 }
 
 .deliveryAddBox {
@@ -108,7 +108,7 @@ h3 {
 .right {
     margin-bottom:100px;
     padding: 40px;
-    height: 60vh;
+    height: 45vh;
     width: 60vh;
     display: flex;
     justify-content: flex-start;
@@ -220,20 +220,64 @@ h3 {
     font-size: 18px;
 }
 
-@media only screen and (max-width:1440px) {
-    body {
-        overflow-y:auto;
+@media only screen and (min-width:1440px) and (max-width:1900px) {
+    .section1 {
+        margin-top: 0px;
+        margin-bottom: 25px;
     }
 
     .section2 {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        padding-top: 15px;
     }
 
     .right {
-        margin-top: 100px;
-        height: auto;
+        height: 40vh;
+        width: auto;
         margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    .right-title > h3 {
+        font-size: 42px;
+    }
+    
+    .right-price {
+        padding-top:15px;
+    }
+    
+    .right-price > h3 {
+        font-size: 36px;
+    }
+    
+    .total-price {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    .color-child {
+        margin-left: 5px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    .input-address {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-address > input {
+        height: 50px;
+        width: 35vh;
+        background: #AC9C8D;
+        border-radius: 30px;
+        margin-top: 10px;
+        color: #fff; 
+        border: 10px;
+        position: right;
+        right: 3px;
+        opacity: 100%;
+        font-size: 18px;
     }
 }

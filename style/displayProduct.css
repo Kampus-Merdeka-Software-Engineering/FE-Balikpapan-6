@@ -70,6 +70,7 @@ img {
     width: 300px;
     height: 200px;
     border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
 }
 
 .item-name, .item-price {
@@ -125,40 +126,45 @@ img {
     background-color: #A04D53;
 }
 
-@media (max-width: 768px) {
-    #buttonRow {
-        justify-content: center;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-items: center;
-        padding: 0px;
-    }
-
-    .item {
-        margin-bottom: 25px;
-    }
-
-    .category {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
+.empty-footer {
+    height:200px;
 }
 
-@media (max-width: 1720px) {
-    .content {
-        flex-wrap: wrap;
+@media only screen and (min-width:1440px) and (max-width:1900px) {
+    .item {
+        height: 300px;
+        width: 220px;
+    }
+    
+    .item-image img {
+        height: 150px;
+        width: 220px;
     }
 
-    .item {
-        margin-bottom: 25px;
+    .item-name {
+        font-size: 20px;
     }
-}
+    
+    .item-price {
+        font-size: 16px
+    }
+
+    .item-name, .item-price {
+        padding-top: 5px;
+    }
+
+    .prod-button {
+        width: 100px;
+        height: 40px;
+    }
+    
+    .item-button {
+        font-size: 18px;
+    }
+
+    .more-button {
+        height: 50px;
+        width: 125px;
+        font-size: 18px;
+    }
+}   
