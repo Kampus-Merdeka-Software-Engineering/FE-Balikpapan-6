@@ -46,6 +46,7 @@ body {
 .item-image img {
     width: 300px;
     height: 200px;
+    object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
 
@@ -85,4 +86,37 @@ button {
 
 button:hover {
     background-color: #322D29;
+}
+
+@media only screen and (min-width:1440px) and (max-width:1900px) {
+    .item {
+        height: 300px;
+        width: 220px;
+    }
+    
+    .item-image img {
+        height: 150px;
+        width: 220px;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+    
+    .item-price {
+        font-size: 16px
+    }
+
+    .item-name, .item-price {
+        padding-top: 5px;
+    }
+
+    .prod-button {
+        width: 100px;
+        height: 40px;
+    }
+    
+    .item-button {
+        font-size: 18px;
+    }
 }

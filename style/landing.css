@@ -101,6 +101,7 @@ body {
     width: 400px;
     height: 250px;
     border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
 }
 
 .name-best {
@@ -116,31 +117,22 @@ body {
     padding-bottom: 50px;
 }
 
-/* styles.css */
 .rectangle-button {
-    /* Set button dimensions and padding */
     width: 400px;
     height: 75px;
     padding: 10px 20px;
     margin-top: 30px;
-
-    /* Define button background color and border */
     background-color: #72383D;
     border: none;
     border-radius: 35px;
-
-    /* Define text styles */
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-
-    /* Add hover effect */
     transition: background-color 0.3s ease;
 }
 
-/* Add hover effect */
 .rectangle-button:hover {
     background-color: #AC9C8D;
 }
@@ -151,34 +143,27 @@ body {
 }
 
 .buy-button {
-    /* Set button dimensions and padding */
     width: 200px;
     height: 50px;
     padding: 10px 20px;
     margin-top: 30px;
-
-    /* Define button background color and border */
     background-color: #72383D;
     border: none;
     border-radius: 35px;
-
-    /* Define text styles */
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-
-    /* Add hover effect */
     transition: background-color 0.3s ease;
 }
 
-/* Add hover effect */
+
 .buy-button:hover {
     background-color: #322D29;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width:1400px) {
     .content-top-right {
         display: none;
     }
