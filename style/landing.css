@@ -163,8 +163,26 @@ body {
     background-color: #322D29;
 }
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1280px) {
     .content-top-right {
         display: none;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .top-text, .description-text {
+        text-align: center;
+    }
+
+    .button-explore {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .content-top-left {
+        padding-right: 50px;
+        padding-left: 50px;
     }
 }

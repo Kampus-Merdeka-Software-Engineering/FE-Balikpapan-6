@@ -88,7 +88,7 @@ button:hover {
     background-color: #322D29;
 }
 
-@media only screen and (min-width:1440px) and (max-width:1900px) {
+/* @media only screen and (min-width:1280px) and (max-width:1900px) {
     .item {
         height: 300px;
         width: 220px;
@@ -119,4 +119,4 @@ button:hover {
     .item-button {
         font-size: 18px;
     }
-}
+} */
