@@ -21,8 +21,11 @@ body {
     position: relative;
 }
 
-span {
+.text {
+    margin-right: -20px;
     margin-left: -20px;
+    text-align: center;
+    text-decoration: none;
     position: relative;
     display: inline-block;
     letter-spacing: 10px;
