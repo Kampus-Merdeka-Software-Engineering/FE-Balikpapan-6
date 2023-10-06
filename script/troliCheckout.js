@@ -20,13 +20,17 @@ async function generateTroli () {
     orderItem = orderItem.data;
 
     const color = await fetchColor();
-
+    
+    let totalPrice = 0;
     const productContainer = document.getElementById('productContainer');
+    const totalPriceContainer = document.getElementById('totalPrice');
 
     for (let i in orderItem) {
         let productResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/product/getProductById/` + orderItem[i].product_id);
         let data = await productResponse.json();
         data = data.data;
+
+        totalPrice = totalPrice + orderItem[i].order_qty * data.price;
 
         const productDiv = document.createElement('div');
         productDiv.classList.add('item');
@@ -59,6 +63,10 @@ async function generateTroli () {
             productContainer.appendChild(productDiv);
         })
     }
+
+    const totalPriceDiv = document.createElement('div');
+    totalPriceDiv.innerHTML = `<h3><span class="total-price">Total Price: </span>IDR ${totalPrice}</h3>`
+    totalPriceContainer.appendChild(totalPriceDiv);
 }
 
 async function deleteOrder (orderItemId) {
