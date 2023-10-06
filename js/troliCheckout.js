@@ -14,7 +14,7 @@ async function generateTroli () {
     let orderResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/order/getOrderByCustomerId/` + customerId);
     let order = await orderResponse.json();
     order = order.data;
-
+    
     let orderItemResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/orderItem/getOrderItemsByOrderId/` + order[0].order_id);
     let orderItem = await orderItemResponse.json();
     orderItem = orderItem.data;
@@ -143,7 +143,7 @@ async function checkout () {
 
 
     sessionStorage.setItem("invoice_id", invoice.invoice_id);
-    window.location.href = '../html/payment.html';
+    window.location.href = 'payment.html';
 }
 
 generateTroli();

@@ -76,6 +76,6 @@ async function paid() {debugger
         icon: 'success',
         showConfirmButton: true,
     }).then(() => {
-        window.location.href = '../html/landing.html';
+        window.location.href = 'landing.html';
     });
 }
