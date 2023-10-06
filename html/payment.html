@@ -15,16 +15,16 @@
                 <div class="title">Total payment amount: IDR 150000</div>
                 <div class="inputBox">
                     <span>card number</span>
-                    <input type="type" maxlength="16" class="card-number-input">
+                    <input id="card_no" type="type" maxlength="16" class="card-number-input">
                 </div>
                 <div class="inputBox">
                     <span>card holder</span>
-                    <input type="text" class="card-holder-input">
+                    <input id="card_holder" type="text" class="card-holder-input">
                 </div>
                 <div class="flexbox">
                     <div class="inputBox">
                         <span>expiration mm</span>
-                        <select name="" id="" class="month-input">
+                        <select name="" id="expiration_month" class="month-input">
                             <option value="month" selected disabled>month</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="inputBox">
                         <span>expiration yy</span>
-                        <select name="" id="" class="year-input">
+                        <select name="" id="expiration_year" class="year-input">
                             <option value="year" selected disabled>year</option>
                             <option value="2021">2021</option>
                             <option value="2022">2022</option>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="inputBox">
                         <span>cvv</span>
-                        <input type="text" maxlength="4" class="cvv-input">
+                        <input id="cvv" type="text" maxlength="4" class="cvv-input">
                     </div>
                 </div>
                 <button onclick="paid()" class="submit-btn">Submit</button>
@@ -95,6 +95,7 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../script/payment.js"></script>
 </body>
 
