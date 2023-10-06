@@ -3,7 +3,6 @@ body {
     font-family: 'Lexend Exa';
     margin: 0;
     padding: 0px;
-    overflow-x: hidden;
 }
 
 header {
@@ -381,6 +380,7 @@ h3 {
     .section1 {
         margin-left:0px;
         margin-right:0px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -397,7 +397,8 @@ h3 {
 
     .right {
         height: 450px;
-        width: 100%;
+        width: 320px;
+        padding: 0px;
         margin-bottom: 50px;
         border-radius: 0px;
         align-items: center;
@@ -417,7 +418,7 @@ h3 {
 
     .input-address > input {
         height: 50px;
-        width: 250px;
+        width: 200px;
     }
 
     .item {
