@@ -35,20 +35,20 @@ function showNavbar() {
             </div>
             </div>
             <nav>
-            <div class="hamburger">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <div class="sidebar">
-                <div class="sidebar-items">
-                    <a class="sidebar-list" href="landing.html#mainPage">Home</a>
-                    <a class="sidebar-list" href="landing.html#bestSelling">Best Selling</a>
-                    <a class="sidebar-list" href="about.html">About</a>
+                <div class="hamburger">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
                 </div>
-            </div>
-        </nav>
-    `
+                <div class="sidebar">
+                    <div class="sidebar-items">
+                        <a class="sidebar-list" href="landing.html#mainPage">Home</a>
+                        <a class="sidebar-list" href="landing.html#bestSelling">Best Selling</a>
+                        <a class="sidebar-list" href="about.html">About</a>
+                    </div>
+                </div>
+            </nav>
+        `
     navbar.appendChild(navbarDiv);
 }
 

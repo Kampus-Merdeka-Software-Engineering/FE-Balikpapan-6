@@ -192,5 +192,6 @@ button {
     .right {
         margin-top: 25px;
         height: 400px;
+        margin-bottom: 50px;
     }
 }
