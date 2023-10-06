@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -131,6 +130,10 @@ pre {
 }
 
 @media only screen and (max-width: 560px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .modal-content {
         width: 300px;
         height: 450px;
