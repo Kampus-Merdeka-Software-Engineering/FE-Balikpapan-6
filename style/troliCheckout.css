@@ -3,6 +3,7 @@ body {
     font-family: 'Lexend Exa';
     margin: 0;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 header {
@@ -384,6 +385,10 @@ h3 {
         width: 550px;
         border-radius: 0px;
         margin-left: 0px;
+    }
+
+    .section2 {
+        width: 100%;
     }
 
     .right {
