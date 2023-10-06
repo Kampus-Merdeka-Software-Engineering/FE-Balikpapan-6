@@ -13,6 +13,11 @@ GET https://be-balikpapan-6-production.up.railway.app/api/product/getProductsByC
 User-Agent: rest-client
 Content-Type: application/json
 
+### getProductsByName
+GET https://be-balikpapan-6-production.up.railway.app/api/product/getProductsByName/bla
+User-Agent: rest-client
+Content-Type: application/json
+
 ### updateProductQty
 PUT https://be-balikpapan-6-production.up.railway.app/api/product/updateProductQty
 User-Agent: rest-client

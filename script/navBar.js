@@ -12,7 +12,7 @@ function showNavbar() {
             </div>
             <div class="navbar-right">
                 <div class="nav-search">
-                    <input type="text" placeholder="Search...">
+                    <input id="searching" type="text" placeholder="Search...">
                 </div>
                 <div class="nav-cart">
                     <a href="troliCheckout.html">
@@ -56,8 +56,21 @@ showNavbar();
 
 const hamburger = document.querySelector('.hamburger');
 const sidebar = document.querySelector('.sidebar');
+const searchInput = document.getElementById('searching');
 
 hamburger.addEventListener('click',()=>{
     hamburger.classList.toggle('clicked');
     sidebar.classList.toggle('show');
 })
+
+searchInput.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+        searching();
+    }
+});
+
+function searching () {
+    let name = $('#searching').val();
+    sessionStorage.setItem("name", name);
+    window.location.href = '../html/searchPage.html'
+}
