@@ -34,7 +34,7 @@ async function submitForm () {
         title: 'New user registered!',
         icon: 'success',
     }).then(() => {
-        window.location.href = '../html/loginpage.html';
+        window.location.href = 'loginpage.html';
     });
 
 }

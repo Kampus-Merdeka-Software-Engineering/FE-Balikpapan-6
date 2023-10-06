@@ -72,5 +72,5 @@ searchInput.addEventListener('keyup', function (event) {
 function searching () {
     let name = $('#searching').val();
     sessionStorage.setItem("name", name);
-    window.location.href = '../html/searchPage.html'
+    window.location.href = 'searchPage.html'
 }

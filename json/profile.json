@@ -1,24 +1,8 @@
 [
+    
     {
-        "pic": "ProfilePic/Ayu.jpg",
-        "name": "Ade Ayu Septiana",
-        "birthDate": "26 September 2001",
-        "univ": "Universitas Padjadjaran",
-        "department": "Sastra Inggris",
-        "fact": "Random person",
-        "linkedin": "https://id.linkedin.com/in/ade-ayu-septiana-15a243231"         
-    },
-    {
-        "pic": "ProfilePic/Elena.jpg",
-        "name": "Elena Merdekawati",
-        "birthDate": "17 Agustus 2002",
-        "univ": "Universitas Negeri Surabaya",
-        "department": "Matematika",
-        "fact": "Agak FOMO",
-        "linkedin": "https://www.linkedin.com/in/elena-merdekawati-dwi-putri-haries-a87858217"             
-    },
-    {
-        "pic": "ProfilePic/Luis.jpg",
+        "role": "Group Leader",
+        "pic": "../assets/profilePic/Luis.jpg",
         "name": "Louise Derizhy",
         "birthDate": "27 April 2002",
         "univ": "Universitas Mikrosil",
@@ -27,16 +11,18 @@
         "linkedin": "https://www.linkedin.com/in/louisederizhy"             
     },
     {
-        "pic": "ProfilePic/Rama.jpg",
-        "name": "Maulidan Rama Ardiansyah",
-        "birthDate": "8 Mei 2003",
-        "univ": "Universitas Negeri Surabaya",
-        "department": "Fisika",
-        "fact": "Tidak bisa main layang-layang",
-        "linkedin": "https://www.linkedin.com/in/maulidan-rama-ardiansyah-2aa57a285"             
+        "role": "Quality Assurance",
+        "pic": "../assets/profilePic/Ayu.jpg",
+        "name": "Ade Ayu Septiana",
+        "birthDate": "26 September 2001",
+        "univ": "Universitas Padjadjaran",
+        "department": "Sastra Inggris",
+        "fact": "Random person",
+        "linkedin": "https://id.linkedin.com/in/ade-ayu-septiana-15a243231"         
     },
     {
-        "pic": "ProfilePic/Putri.jpg",
+        "role": "Front-End",
+        "pic": "../assets/profilePic/Putri.jpg",
         "name": "Putri Amalia Zahrai",
         "birthDate": "4 Januari 2003",
         "univ": "Universitas Pendidikan Indonesia",
@@ -45,7 +31,28 @@
         "linkedin": "https://www.linkedin.com/in/putri-amalia-zahrai-87685a216"             
     },
     {
-        "pic": "ProfilePic/Risa.jpg",
+        "role": "Front-End",
+        "pic": "../assets/profilePic/Elena.jpg",
+        "name": "Elena Merdekawati",
+        "birthDate": "17 Agustus 2002",
+        "univ": "Universitas Negeri Surabaya",
+        "department": "Matematika",
+        "fact": "Agak FOMO",
+        "linkedin": "https://www.linkedin.com/in/elena-merdekawati-dwi-putri-haries-a87858217"             
+    },
+    {
+        "role": "Back-End",
+        "pic": "../assets/profilePic/Rama.jpg",
+        "name": "Maulidan Rama Ardiansyah",
+        "birthDate": "8 Mei 2003",
+        "univ": "Universitas Negeri Surabaya",
+        "department": "Fisika",
+        "fact": "Tidak bisa main layang-layang",
+        "linkedin": "https://www.linkedin.com/in/maulidan-rama-ardiansyah-2aa57a285"             
+    },
+    {
+        "role": "Back-End",
+        "pic": "../assets/profilePic/Risa.jpg",
         "name": "Risa Fatima Zahra",
         "birthDate": "27 Januari 2002",
         "univ": "IPB University",
