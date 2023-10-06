@@ -182,7 +182,32 @@ body {
 
 @media only screen and (max-width:600px) {
     .content-top-left {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .top-text > h1 {
+        font-size: 36px;
+    }
+
+    .description-text > p {
+        font-size: 24px;
+    }
+
+    .rectangle-button {
+        width: 100%;
+    }
+
+    .bottom-text > h2 {
+        font-size: 36px;
+    }
+
+    .best, .item-image > img {
+        border-radius: 0px;
+    }
+
+    .button-more > .rectangle-button {
+        width: 250px;
     }
 }
