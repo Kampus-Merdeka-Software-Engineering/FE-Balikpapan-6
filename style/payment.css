@@ -184,3 +184,39 @@
         margin-bottom: 25px;
     }
 }
+
+@media only screen and (max-width: 660px) {
+    .container form {
+        width: 400px;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .form-payment {
+        font-size: 12px;
+    }
+
+    .container form .flexbox {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .container form .flexbox .inputBox{
+        flex:0px;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    .container form {
+        width: 300px;
+        margin-top: 25px;
+    }
+
+    .container .card-container {
+        width: 300px;
+    }
+}

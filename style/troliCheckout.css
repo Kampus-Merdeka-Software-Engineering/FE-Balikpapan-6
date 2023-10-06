@@ -106,8 +106,8 @@ h3 {
 .right {
     margin-bottom:100px;
     padding: 40px;
-    height: 45vh;
-    width: 60vh;
+    height: 450px;
+    width: 600px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -229,7 +229,6 @@ h3 {
     }
 
     .right {
-        height: 40vh;
         width: auto;
         margin-top: 0px;
         margin-bottom: 25px;
@@ -370,15 +369,49 @@ h3 {
     .cancel-order-button {
         width: 100px;
         height: 50px;
-        background: #AC9C8D;
-        border-radius: 30px;
-        margin-top: 10px;
-        color: #322D29; 
-        border: 10px; 
-        cursor: pointer;
-        position: right;
-        right: 3px;
-        opacity: 100%;
-        transition: background-color 0.3s ease;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .section1 {
+        margin-left:0px;
+        margin-right:0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .deliveryAddBox {
+        width: 550px;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+
+    .right {
+        height: 400px;
+        width: 450px;
+        margin-bottom: 50px;
+        border-radius: 0px;
+        align-items: center;
+    }
+
+    .right-title, .right-price, .right-add-button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .input-address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-address > input {
+        height: 50px;
+        width: 300px;
+    }
+
+    .item {
+        border-radius: 0px;
     }
 }
