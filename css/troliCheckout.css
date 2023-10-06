@@ -294,7 +294,7 @@ h3 {
 
     .input-address > input {
         height: 50px;
-        width: 35vh;
+        width: 350px;
         background: #AC9C8D;
         border-radius: 30px;
         margin-top: 10px;
@@ -382,7 +382,7 @@ h3 {
     }
 
     .deliveryAddBox {
-        width: 550px;
+        width: 100%;
         border-radius: 0px;
         margin-left: 0px;
     }
@@ -393,7 +393,7 @@ h3 {
 
     .right {
         height: 450px;
-        width: 100vh;
+        width: 100%;
         margin-bottom: 50px;
         border-radius: 0px;
         align-items: center;
