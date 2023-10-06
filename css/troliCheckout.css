@@ -63,6 +63,10 @@ i {
     align-items: center;
 }
 
+.itemContent1 > img {
+    object-fit: cover;
+}
+
 .itemContent2 {
     height: 250px;
     width: 350px;
@@ -413,10 +417,14 @@ h3 {
 
     .input-address > input {
         height: 50px;
-        width: 300px;
+        width: 250px;
     }
 
     .item {
+        border-radius: 0px;
+    }
+
+    .itemContent1 > img {
         border-radius: 0px;
     }
 }
