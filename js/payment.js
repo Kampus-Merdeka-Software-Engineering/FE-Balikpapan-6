@@ -33,7 +33,44 @@ document.querySelector('.cvv-input').oninput = () => {
     document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
 
-function paid() {
+async function paid() {debugger
+    let customerId = parseInt(sessionStorage.getItem('customer_id'));
+
+    let json = {}
+    json.customer_id = customerId;
+    json.card_no = parseInt($('#card_no').val());
+    json.card_holder = $('#card_holder').val();
+    json.expiration_month = $('#expiration_month').val();
+    json.expiration_year = $('#expiration_year').val();
+    json.cvv = parseInt($('#cvv').val());
+
+    let pmResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/paymentMethod/createPaymentMethod`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(json)
+    })
+    let pm = await pmResponse.json();
+    pm = pm.data;
+
+    let orderResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/order/getOrderByCustomerId/` + customerId);
+    let order = await orderResponse.json();
+    order = order.data;
+    order = order[0];
+
+    let cp = {};
+    cp.order_id = order.order_id;
+
+    let orderCompleteResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/order/orderComplete`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(cp)
+    })
+    let orderComplete = await orderCompleteResponse.json();
+
     Swal.fire({
         title: 'Payment Complete',
         icon: 'success',

@@ -143,7 +143,7 @@ async function checkout () {
 
 
     sessionStorage.setItem("invoice_id", invoice.invoice_id);
-    window.location.href = 'payment.html';
+    window.location.href = '../html/payment.html';
 }
 
 generateTroli();
