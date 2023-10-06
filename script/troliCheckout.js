@@ -67,6 +67,8 @@ async function generateTroli () {
     const totalPriceDiv = document.createElement('div');
     totalPriceDiv.innerHTML = `<h3><span class="total-price">Total Price: </span>IDR ${totalPrice}</h3>`
     totalPriceContainer.appendChild(totalPriceDiv);
+
+    $('#orderTotalPrice').val(totalPrice);
 }
 
 async function deleteOrder (orderItemId) {
@@ -88,6 +90,60 @@ async function deleteOrder (orderItemId) {
     }).then(() => {
         location.reload();
     });
+}
+
+async function checkout () {
+    let customerId = sessionStorage.getItem('customer_id');
+    let orderResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/order/getOrderByCustomerId/` + customerId);
+    let order = await orderResponse.json();
+    order = order.data;
+
+    let newInvoice = {}
+    newInvoice.order_id = order[0].order_id;
+    newInvoice.payment_amount = parseInt($('#orderTotalPrice').val());
+    
+    let invoiceResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/invoice/createInvoice`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newInvoice)
+    })
+    const invoiceData = await invoiceResponse.text();
+    let invoice = JSON.parse(invoiceData);
+    invoice = invoice.invoice;
+    if (typeof invoice === 'undefined') {
+        invoice = JSON.parse(invoiceData);
+        invoice = invoice.checkInvoice;
+        invoice = invoice[0];
+    }
+    
+    let checkShipment = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/shipment/getShipmentByInvoiceId/` + invoice.invoice_id);
+    let checkShipmentVal = await checkShipment.json();
+    checkShipmentVal = checkShipmentVal.data;
+
+    let shipmentData = checkShipmentVal; 
+
+    if (!shipmentData || shipmentData.length === 0) {
+        let newShipment = {}
+        newShipment.invoice_id = invoice.invoice_id;
+        newShipment.address = $('#address').val();
+        newShipment.city = $('#city').val();
+        newShipment.province = $('#province').val();
+    
+        let shipmentResponse = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/shipment/createShipment`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newShipment)
+        })
+        shipmentData = await shipmentResponse.text();
+    }
+
+
+    sessionStorage.setItem("invoice_id", invoice.invoice_id);
+    window.location.href = 'payment.html';
 }
 
 generateTroli();
