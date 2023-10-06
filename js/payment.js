@@ -33,7 +33,7 @@ document.querySelector('.cvv-input').oninput = () => {
     document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
 
-async function paid() {debugger
+async function paid() {
     let customerId = parseInt(sessionStorage.getItem('customer_id'));
 
     let json = {}
@@ -78,4 +78,6 @@ async function paid() {debugger
     }).then(() => {
         window.location.href = 'landing.html';
     });
+
+    window.location.href = 'landing.html';
 }

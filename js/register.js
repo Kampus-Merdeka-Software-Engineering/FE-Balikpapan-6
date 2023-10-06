@@ -21,7 +21,7 @@ async function submitForm () {
     json.username = username;
     json.password = password;
 
-    let response = await fetch(`http://be-balikpapan-6-production.up.railway.app/api/user/create`, {
+    let response = await fetch(`https://be-balikpapan-6-production.up.railway.app/api/user/create`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

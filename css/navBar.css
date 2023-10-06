@@ -151,8 +151,8 @@ nav a {
 
 
 @media only screen and (max-width: 800px) {
-    .nav-search {
-        display: none;
+    .nav-search > input {
+        width: 100px;
     }
 
     .nav-text {
@@ -182,6 +182,10 @@ nav a {
 }
 
 @media only screen and (max-width: 600px) {
+    .nav-search {
+        display: none;
+    }
+
     .sidebar {
         position: fixed;
         top: 0;
