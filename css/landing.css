@@ -164,12 +164,16 @@ body {
 }
 
 @media only screen and (max-width:1280px) {
-    .content-top-right {
-        display: none;
+    .content-top-right > img{
+        width: 400px;
     }
 }
 
-@media only screen and (max-width:1020px) {
+@media only screen and (max-width:980px) {
+    .content-top-right {
+        display: none;
+    }
+
     .top-text, .description-text {
         text-align: center;
     }
