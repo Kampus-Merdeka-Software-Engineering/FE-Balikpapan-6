@@ -111,10 +111,16 @@ button {
 
 @media only screen and (max-width: 1280px) {
     .first {
-        display: none;
+        height: 90vh;
+        width: 60vh;
     }
 }
 
+@media only screen and (max-width: 1020px) {
+    .first {
+        display: none;
+    }
+}
 @media only screen and (max-width: 660px) {
     .title > h1 {
         font-size: 36px;
