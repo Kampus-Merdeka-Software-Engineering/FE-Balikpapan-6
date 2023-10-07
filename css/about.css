@@ -27,8 +27,8 @@ body {
 
 .content {
     padding-top: 40px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 300px;
+    padding-left: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -128,6 +128,21 @@ pre {
 .empty-box {
     height: 50px;
 }
+
+@media only screen and (max-width: 1440px) {
+    .content {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .content {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
 
 @media only screen and (max-width: 560px) {
     .content {
