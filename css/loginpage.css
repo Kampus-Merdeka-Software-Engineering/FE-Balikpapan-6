@@ -124,6 +124,13 @@ ion-icon {
 
 @media only screen and (max-width: 1280px) {
     .first {
+        height: 90vh;
+        width: 60vh;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .first {
         display: none;
     }
 }
