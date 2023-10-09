@@ -78,7 +78,8 @@ body {
     width: 400px;
     height: 500px;
     background-color: #D1C7BD;
-    border-radius: 15px;
+    border-radius: 25px;
+    box-shadow: 5px 5px #72383D;
 }
 
 .best > img {
@@ -213,5 +214,9 @@ body {
 
     .button-more > .rectangle-button {
         width: 250px;
+    }
+
+    .best {
+        box-shadow: 5px 10px #72383D;
     }
 }

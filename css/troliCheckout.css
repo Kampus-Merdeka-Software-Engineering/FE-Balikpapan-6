@@ -52,6 +52,7 @@ i {
     color: white;
     display: flex;
     border-radius: 25px;
+    box-shadow: 5px 5px #322D29;
 }
 
 .itemContent1 {

@@ -64,6 +64,7 @@ img {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    box-shadow: 5px 5px #322D29;
 }
 
 .item-image img {
