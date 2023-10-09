@@ -80,6 +80,7 @@ body {
     background-color: #D1C7BD;
     border-radius: 25px;
     box-shadow: 5px 5px #72383D;
+    transition: transform 0.3s ease;
 }
 
 .best > img {
@@ -116,6 +117,7 @@ body {
 .button-more {
     padding-top: 50px;
     padding-bottom: 50px;
+    transition: transform 0.3s ease;
 }
 
 .rectangle-button {
@@ -132,10 +134,12 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .rectangle-button:hover {
     background-color: #AC9C8D;
+    transform: scale(1.1);
 }
 
 .buy-now {
@@ -157,11 +161,17 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 
 .buy-button:hover {
     background-color: #322D29;
+    transform: scale(1.1);
+}
+
+.best:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width:1280px) {

@@ -82,10 +82,15 @@ input, button {
     position: right;
     right: 3px;
     opacity: 100%;
+    transition: transform 0.3s ease;
 }
 
 button {
     width: 150px;
+}
+
+input:hover, button:hover {
+    transform: scale(1.1);
 }
 
 .icons {

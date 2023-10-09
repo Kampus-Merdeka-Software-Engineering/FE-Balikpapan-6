@@ -42,6 +42,11 @@ body {
     flex-direction: column;
     margin: 25px;
     box-shadow: 5px 5px #322D29;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
 }
 
 .item-image img {
@@ -83,10 +88,12 @@ button {
     right: 3px;
     opacity: 100%;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
     background-color: #322D29;
+    transform: scale(1.2);
 }
 
 /* @media only screen and (min-width:1280px) and (max-width:1900px) {

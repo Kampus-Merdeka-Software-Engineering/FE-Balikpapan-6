@@ -45,6 +45,11 @@ body {
     flex-direction: column;
     margin: 25px;
     box-shadow: 5px 5px #322D29;
+    transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+    transform: scale(1.1);
 }
 
 .item-image img {
