@@ -105,10 +105,12 @@ button {
 
 .right-add-button > button:hover {
     background-color: #322D29;
+    transform: scale(1.1);
 }
 
 .add > button:hover {
     background-color: #322D29;
+    transform: scale(1.1);
 }
 
 .add {
@@ -119,6 +121,7 @@ button {
 
 .add > button {
     width: 30px;
+    transition: transform 0.3s ease;
 }
 
 .right-add-button {
@@ -128,6 +131,7 @@ button {
 .right-add-button > button {
     width: 150px;
     font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
 #quantityLabel {

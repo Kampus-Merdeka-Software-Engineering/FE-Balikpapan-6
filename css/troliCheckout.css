@@ -53,6 +53,11 @@ i {
     display: flex;
     border-radius: 25px;
     box-shadow: 5px 5px #322D29;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.1);
 }
 
 .itemContent1 {
@@ -190,8 +195,7 @@ h3 {
 }
 
 .cancel-order-button:hover {
-    background: #322D29;
-    color: #AC9C8D;
+    transform: scale(1.1);
 }
 
 .input-address > input {
@@ -212,6 +216,7 @@ h3 {
 
 .checkout-button:hover {
     background-color: #322D29;
+    transform: scale(1.1);
 }
 
 .right-add-button {
@@ -221,6 +226,7 @@ h3 {
 .right-add-button > button {
     width: 150px;
     font-size: 18px;
+    transition: transform 0.3s ease;
 }
 
 @media only screen and (min-width:1280px) and (max-width:1900px) {
